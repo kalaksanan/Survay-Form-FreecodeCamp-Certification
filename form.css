@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #f4c7ab;
+  --text-color: #2a2b2c;
+  --secondary-color: #b2b8a3;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+.containermain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 900px;
+  border-radius: 10px;
+}
+.label-name {
+  padding: 0.3rem;
+}
+
+.input1 {
+  border: none;
+  box-shadow: none;
+  font: inherit;
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+:focus {
+  outline-color: orange;
+}
+.header,
+.description {
+  background-color: (var(--primary-color));
+  text-align: center;
+}
+.description {
+  margin-bottom: 1rem;
+}
+.top {
+  grid-area: top;
+}
+.survey-form {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container {
+  min-width: 600px;
+  max-width: 90%;
+}
+@media (max-width: 1350px) {
+  .container {
+    min-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    min-width: 200px;
+  }
+}
+.ft {
+  margin-top: 1.5rem;
+}
+
+.form-group1,
+.form-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+
+.form-select {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.select {
+  width: 84%;
+  height: 2.5rem;
+  padding: 1px;
+  font-size: inherit;
+  color: var(--text-color);
+  border: none;
+  font-weight: lighter;
+  border-radius: 5px;
+}
+.select:focus {
+  outline-color: orange;
+}
+
+.form-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 84%;
+  margin-left: 10%;
+  margin-top: 1.2rem;
+}
+.input-checkbox {
+  color: var(--secondary-color);
+  border: none;
+}
+
+.form-text {
+  margin-top: 1.2rem;
+  width: 90%;
+}
+
+.text-area {
+  border: none;
+  border-radius: 5px;
+}
+.form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-button {
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #476072;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}

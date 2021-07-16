@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Form Survey</title>
+  </head>
+  <body>
+    <div class="containermain">
+      <div class="container">
+        <div class="header">
+          <h1 id="title">FreeCodeCamp Survey Form</h1>
+        </div>
+        <div class="description">
+          <p id="description">
+            Thank you for taking the time to help us improve the platform
+          </p>
+        </div>
+        <form
+          class="survey-form"
+          action="https://www.freecatphotoapp.com/submit"
+          id="survey-form"
+        >
+          <div class="top">
+            <div class="form-group1">
+              <label class="label-name ft" for="name" id="name-label"
+                >Name</label
+              >
+              <input
+                class="form-control input1"
+                id="name"
+                type="text"
+                placeholder="Your Name ..."
+                required
+              />
+            </div>
+            <div class="form-group1">
+              <label class="label-name" for="email" id="email-label"
+                >Email</label
+              >
+              <input
+                class="form-control input1"
+                id="email"
+                type="email"
+                placeholder="user@gmail.com"
+                required
+              />
+            </div>
+            <div class="form-group1">
+              <label class="label-name" for="number" id="number-label"
+                >Age</label
+              >
+              <input
+                class="form-control input1"
+                id="number"
+                type="number"
+                min="1"
+                max="3"
+                placeholder="Your Age (Optional)"
+              />
+            </div>
+          </div>
+          <div class="form-select">
+            <select id="dropdown" name="role" class="select" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-radio">
+            <p>Select a maintenance drone:</p>
+
+            <div>
+              <input
+                class="input-radio"
+                type="radio"
+                id="huey"
+                name="drone"
+                value="huey"
+                checked
+              />
+              <label for="huey">Huey</label>
+            </div>
+
+            <div>
+              <input
+                class="input-radio"
+                type="radio"
+                id="dewey"
+                name="drone"
+                value="dewey"
+              />
+              <label class="label-radio" for="dewey">Dewey</label>
+            </div>
+
+            <div>
+              <input
+                class="input-checkbox"
+                type="radio"
+                id="louie"
+                name="drone"
+                value="louie"
+              />
+              <label for="louie">Louie</label>
+            </div>
+          </div>
+          <div class="form-radio">
+            <p>Choose your monster's features:</p>
+
+            <div>
+              <input
+                class="input-checkbox"
+                type="checkbox"
+                id="scales"
+                name="scales"
+                value="scales"
+                checked
+              />
+              <label for="scales">Scales</label>
+            </div>
+
+            <div>
+              <input
+                class="input-checkbox"
+                type="checkbox"
+                id="horns"
+                name="horns"
+                value="horns"
+              />
+              <label for="horns">Horns</label>
+            </div>
+          </div>
+          <div class="form-text">
+            <p>Send Your Message</p>
+            <textarea
+              class="text-area"
+              name=""
+              id=""
+              rows="7"
+              cols="47"
+            ></textarea>
+          </div>
+          <div class="form-submit">
+            <button class="submit-button" type="submit" id="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
